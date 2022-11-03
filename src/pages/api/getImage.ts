@@ -9,9 +9,9 @@ const response = await openAi.createImage({
     n: 1,
     size: "512x512",
   });
-  if (response.status === 200) {
+  if (response) {
     res.status(200).json(response.data);
   } else {
-    res.status(400).json({ message: "Something went wrong" });
+    res.status(500).json({ message: "Something went wrong , try again later" });
   }
 }

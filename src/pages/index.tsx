@@ -44,7 +44,7 @@ export default function Home() {
           </button>
         </h1>
         <h2 className="text-[0.8rem] md:text-lg text-center my-[2rem] mx-5 text-pink-400">
-          Generate image from text with help of AI
+          Generate Artwork with help of AI
         </h2>
         <form onSubmit={handleSubmit} className="my-5 text-center">
           <input
