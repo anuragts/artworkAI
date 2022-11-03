@@ -28,7 +28,7 @@ export default function Home() {
   return (
     <div className="">
       <Head>
-        <title>imageAI</title>
+        <title>Artwork AI</title>
         <meta name="description" content="Create artworks in a click" />
         <link rel="icon" href="/favicon.ico" />
       </Head>
@@ -72,7 +72,7 @@ export default function Home() {
           </button>
         </form>
         {loading && (
-          <p className="text-center my-5 10">Generating your image...</p>
+          <p className="text-center my-5 10">Generating your Artwork...</p>
         )}
         {data && (
           <div className="flex justify-center">
