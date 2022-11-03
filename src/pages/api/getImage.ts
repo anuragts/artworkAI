@@ -5,7 +5,7 @@ export default async (req: NextApiRequest, res: NextApiResponse) => {
 const prompt:string = req.body.prompt;
 const type:string = req.body.type;
 const response = await openAi.createImage({
-    prompt: `Create an ${type} image of ${prompt}`,
+    prompt: `Create an ${type} artwork of ${prompt}`,
     n: 1,
     size: "512x512",
   });

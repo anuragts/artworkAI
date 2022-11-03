@@ -35,7 +35,7 @@ export default function Home() {
 
       <main className="">
         <h1 className="text-center text-2xl md:text-4xl mt-[3rem]">
-          <Link href="/">Image AI 🖼</Link>
+          <Link href="/">Artwork AI 🖼</Link>
           <button
             title="currently in beta , responses may vary"
             className="border-2 text-xl rounded-full mx-5 px-3 py-1 text-[#00ffc8] border-[#00ffc8] beta"
