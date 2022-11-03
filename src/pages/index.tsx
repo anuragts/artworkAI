@@ -29,14 +29,14 @@ export default function Home() {
   return (
     <div className="">
       <Head>
-        <title>toImage</title>
+        <title>imageAI</title>
         <meta name="description" content="Create artworks in a click" />
         <link rel="icon" href="/favicon.ico" />
       </Head>
 
       <main className="">
         <h1 className="text-center text-2xl md:text-4xl mt-[5rem]">
-          <Link href="/">AI Image 🖼</Link>
+          <Link href="/">Image AI 🖼</Link>
           <button
             title="currently in beta , responses may vary"
             className="border-2 text-xl rounded-full mx-5 px-3 py-1 text-[#00ffc8] border-[#00ffc8] beta"
