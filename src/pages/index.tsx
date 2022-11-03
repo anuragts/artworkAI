@@ -1,5 +1,4 @@
 import Head from "next/head";
-import Image from "next/image";
 import { useState } from "react";
 import Link from "next/link";
 
@@ -15,7 +14,7 @@ export default function Home() {
 
     const response = await fetch("/api/getImage", {
       method: "POST",
-      body: JSON.stringify({ prompt: dataObj.prompt,type:dataObj.type  }),
+      body: JSON.stringify({ prompt: dataObj.prompt, type: dataObj.type }),
       headers: {
         "Content-Type": "application/json",
       },
@@ -35,7 +34,7 @@ export default function Home() {
       </Head>
 
       <main className="">
-        <h1 className="text-center text-2xl md:text-4xl mt-[5rem]">
+        <h1 className="text-center text-2xl md:text-4xl mt-[3rem]">
           <Link href="/">Image AI 🖼</Link>
           <button
             title="currently in beta , responses may vary"
@@ -44,6 +43,9 @@ export default function Home() {
             beta
           </button>
         </h1>
+        <h2 className="text-[0.8rem] md:text-lg text-center my-[2rem] mx-5 text-pink-400">
+          Generate image from text with help of AI
+        </h2>
         <form onSubmit={handleSubmit} className="my-5 text-center">
           <input
             type="text"
@@ -74,7 +76,7 @@ export default function Home() {
         )}
         {data && (
           <div className="flex justify-center">
-            <div className="flex justify-center my-10 border-2 w-[700px] py-10">
+            <div className="flex justify-center my-10 border-2 w-[700px] py-10 mx-5">
               <img src={`${data}`} alt="Make a request" />
             </div>
           </div>
