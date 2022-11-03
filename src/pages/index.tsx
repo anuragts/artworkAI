@@ -59,9 +59,9 @@ export default function Home() {
             id="type"
             className="text-xl py-2 px-2 text-center"
           >
+            <option value="Painting">Painting</option>
             <option value="Realistic">Realistic</option>
             <option value="Cartoon">Cartoon</option>
-            <option value="Painting">Painting</option>
           </select>
           <br />
           <button
