@@ -72,7 +72,9 @@ export default function Home() {
           </button>
         </form>
         {loading && (
-          <p className="text-center my-5 10">Generating your Artwork...</p>
+          <p className="text-center my-5 10">Generating your Artwork... <br />
+          <span className="text-[0.8rem] text-pink-400">This may take a while</span>
+          </p>
         )}
         {data && (
           <div className="flex justify-center">
