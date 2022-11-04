@@ -1,6 +1,9 @@
 import Head from "next/head";
 import { useState } from "react";
 import Link from "next/link";
+// add image download button
+import { saveAs } from "file-saver";
+
 
 export default function Home() {
   const [data, setData] = useState([]);
@@ -72,8 +75,11 @@ export default function Home() {
           </button>
         </form>
         {loading && (
-          <p className="text-center my-5 10">Generating your Artwork... <br />
-          <span className="text-[0.8rem] text-pink-400">This may take a while</span>
+          <p className="text-center my-5 10">
+            Generating your Artwork... <br />
+            <span className="text-[0.8rem] text-pink-400">
+              This may take a while
+            </span>
           </p>
         )}
         {data && (
@@ -83,6 +89,14 @@ export default function Home() {
             </div>
           </div>
         )}
+        <div className="flex justify-center">
+          <button
+            className="my-10 mx-5 px-5 py-3 text-xl bg-white text-black font-semibold rounded-xl"
+            onClick={() => saveAs(`${data}`, "image.jpg")}
+          >
+            Download
+          </button>
+        </div>
       </main>
     </div>
   );
