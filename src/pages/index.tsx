@@ -63,8 +63,9 @@ export default function Home() {
             className="text-xl py-2 px-2 text-center"
           >
             <option value="Painting">Painting</option>
-            <option value="Realistic">Realistic</option>
-            <option value="Cartoon">Cartoon</option>
+            <option value="4k hd, high detail photograph, shot with sigma f/ 4.2, 250 mm sharp lens, shallow depth of field, consistent, high detailed light refraction, high level texture render">Realistic</option>
+            <option value="Pencil Sketch , high detail , 4k HD , consistent">Sketch</option>
+            <option value="Cartoon ,high detail,4k hd">Cartoon</option>
           </select>
           <br />
           <button
